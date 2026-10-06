@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 40px 20px; background: #eee9df; color: #24352d; font-family: Arial, sans-serif; }
+main { max-width: 640px; margin: auto; }
+h1 { font: 3rem Georgia, serif; margin: 18px 0; }
+.label { font-size: .75rem; letter-spacing: .15em; }
+#photoPlaceholder { min-height: 250px; margin-top: 28px; padding: 24px; display: grid; place-items: center; border: 2px dashed #8e9a8c; background: #d9dfd4; text-align: center; }
+#position, .note { font-size: .9rem; line-height: 1.6; }
+button { background: #24352d; color: white; border: 0; padding: 14px 24px; font: inherit; cursor: pointer; }
+button:focus-visible { outline: 3px solid #a17d42; outline-offset: 4px; }
+.note { margin-top: 28px; }
