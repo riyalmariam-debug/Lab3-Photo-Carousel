@@ -1,6 +1,6 @@
 # Between Chapters — Lab 3: The Power of Sequencing
 
-An interactive real-estate photo story branded for Mariam Riyal. This extends the original Class Progress starter with actual photographs, two narratives, and richer controls. No framework, dependencies, external fonts, or build step. Open index.html locally or deploy the repository root with GitHub Pages.
+An interactive real-estate photo story branded for me (Mariam Riyal). This extends the last Class Progress starter with actual photographs, two narratives, and richer controls. No framework, dependencies, external fonts, or build step. Open index.html locally or deploy the repository root with GitHub Pages.
 
 ## The same three photos, two meanings
 
