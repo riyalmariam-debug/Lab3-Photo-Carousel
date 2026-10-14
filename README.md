@@ -32,6 +32,3 @@ All downloaded from Unsplash and included locally under the Unsplash License (ht
 - Exterior: Zac Gudakov — https://unsplash.com/photos/wwqZ8CM21gg
 - Empty room: Alex Tyson — https://unsplash.com/photos/ZWHajYLVsKo
 - Keys: Maria Ziegler — https://unsplash.com/photos/jJnZg7vBfMs
-
-## Validation
-JavaScript syntax and automated DOM interaction checks cover both orders, matching shared assets, caption changes, navigation boundaries, sequence switching, thumbnails, restart, keyboard, swipes, and comparison controls. Image files were decoded and visually inspected. Full rendered browser QA was unavailable in the build environment; check desktop/mobile layout in the published page before submission.
