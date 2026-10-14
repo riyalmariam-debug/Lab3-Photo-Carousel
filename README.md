@@ -33,13 +33,5 @@ All downloaded from Unsplash and included locally under the Unsplash License (ht
 - Empty room: Alex Tyson — https://unsplash.com/photos/ZWHajYLVsKo
 - Keys: Maria Ziegler — https://unsplash.com/photos/jJnZg7vBfMs
 
-## Update your existing repository
-Keep the original Class Progress commit. Upload the new index.html, style.css, script.js, README.md, and the complete images folder to the repository root. Do not upload only a ZIP or an enclosing project folder. Commit the finished changes with a descriptive message such as Complete Lab 3 photo carousel.
-
-Repository: https://github.com/riyalmariam-debug/Lab3-Photo-Carousel
-GitHub Pages address when enabled: https://riyalmariam-debug.github.io/Lab3-Photo-Carousel/
-
-In Settings → Pages, use Deploy from a branch → main → /(root) → Save. Wait for deployment, open the URL GitHub displays, and verify the finished version before submitting both URLs.
-
 ## Validation
 JavaScript syntax and automated DOM interaction checks cover both orders, matching shared assets, caption changes, navigation boundaries, sequence switching, thumbnails, restart, keyboard, swipes, and comparison controls. Image files were decoded and visually inspected. Full rendered browser QA was unavailable in the build environment; check desktop/mobile layout in the published page before submission.
