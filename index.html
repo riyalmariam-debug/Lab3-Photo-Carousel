@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Finding Home — Lab 3 Starter</title>
+  <meta name="description" content="Three photographs. Two perspectives. An interactive real-estate story about finding a home and leaving one behind, by Mariam Riyal.">
+  <title>Between Chapters | Mariam Riyal</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main>
-    <p class="label">LAB 3 · WORK IN PROGRESS</p>
-    <h1>Finding Home</h1>
-    <p>A first experiment with sequencing a home-buying story.</p>
-    <!-- Temporary text placeholder. Replace with an img element after choosing photos. -->
-    <div id="photoPlaceholder">Photo to collect: a house exterior</div>
-    <div aria-live="polite">
-      <p id="position">Beginning · 1 of 3</p>
-      <h2 id="caption">The search begins.</h2>
-    </div>
-    <button id="nextButton" type="button">Next →</button>
-    <p class="note">Starter only: photos and the second narrative sequence are still to come.</p>
+  <a class="skip-link" href="#story">Skip to the story</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Mariam Riyal, back to top"><span class="monogram" aria-hidden="true">MR</span><span>MARIAM RIYAL<small>REAL ESTATE · A DIFFERENT PERSPECTIVE</small></span></a>
+    <a class="nav-link" href="#comparison">Compare the stories <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow"><span></span> THE POWER OF SEQUENCING</p><h1 id="page-title">Between<br><em>chapters.</em></h1></div>
+      <div class="intro-copy"><p>A home can be a beginning.<br>It can also be a goodbye.</p><p class="muted">Three photographs. Two different stories.<br>Change the order. Feel the difference.</p><a href="#story" class="text-link">Explore both perspectives <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section id="story" class="story-section" aria-labelledby="sequenceTitle">
+      <div class="story-toolbar"><div class="sequence-switch" role="group" aria-label="Choose a story"><button type="button" class="mode-button active" data-sequence="arrival" aria-pressed="true">01 <span>Finding home</span></button><button type="button" class="mode-button" data-sequence="departure" aria-pressed="false">02 <span>Leaving home</span></button></div><span class="toolbar-note">SAME IMAGES. A NEW MEANING.</span></div>
+      <div class="sequence-intro"><h2 id="sequenceTitle">Finding home</h2><p id="sequenceDescription">From a possibility on the outside to a future that is finally yours.</p></div>
+      <div class="carousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Three-photo story. Use left and right arrow keys to navigate.">
+        <div class="photo-wrap"><img id="storyImage" src="images/exterior.jpg" alt="A red two-storey house framed by trees and a green lawn." width="1600" height="1067" fetchpriority="high"><div class="photo-topline"><span id="stageBadge">THE BEGINNING</span><span id="largeCounter">01 / 03</span></div><span class="image-label" id="imageLabel">THE EXTERIOR</span></div>
+        <div class="story-panel"><div class="panel-top"><p id="storyMood" class="eyebrow">POSSIBILITY</p><span class="small-mark" aria-hidden="true">↗</span></div><div class="caption" id="slideCopy"><span id="chapterNumber">01</span><h3 id="slideTitle">First, you see<br>a possibility.</h3><p id="slideCaption">A front door. A quiet street. Before it is yours, a house is a place you can imagine yourself becoming.</p></div><div class="panel-bottom"><div class="step-lines" aria-label="Choose a story step"><button type="button" data-step="0" aria-label="Beginning" aria-current="step"></button><button type="button" data-step="1" aria-label="Middle"></button><button type="button" data-step="2" aria-label="End"></button></div><div class="carousel-controls"><button type="button" id="previousButton" aria-label="Previous photograph" disabled>←</button><span id="position">1 of 3</span><button type="button" id="nextButton" aria-label="Next photograph">→</button></div></div></div>
+      </div>
+      <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="under-carousel"><p>Click a thumbnail, use the arrows, or swipe the photograph.</p><button type="button" id="restartButton" class="text-link">Restart this story ↺</button></div>
+      <div class="thumbnail-grid" id="thumbnailGrid" aria-label="Story photographs"></div>
+      <div class="takeaway"><span class="eyebrow">THE PERSPECTIVE</span><p id="takeaway">The empty room feels full of possibility. The keys at the end turn anticipation into belonging.</p></div>
+    </section>
+    <section class="comparison" id="comparison" aria-labelledby="comparisonTitle"><div class="section-heading"><p class="eyebrow">ORDER CHANGES EVERYTHING</p><h2 id="comparisonTitle">One place.<br><em>Two ways to feel it.</em></h2><p>No new photographs. Just a different beginning, middle, and end.</p></div><div id="comparisonStories" class="comparison-stories"></div></section>
+    <section class="closing"><p class="eyebrow">EVERY MOVE HAS TWO SIDES</p><h2>Someone’s next chapter.<br><em>Someone else’s last look.</em></h2><p>Real estate is more than a transaction. It is the story on either side of the door.</p><a href="#story" class="text-link">See it from the other side ↑</a></section>
   </main>
-  <script src="script.js"></script>
+  <footer><div><strong>MARIAM RIYAL</strong><span>Real estate, with a human perspective.</span></div><details><summary>About this project & photo credits</summary><p>Lab 3: The Power of Sequencing. A fictional editorial story using three stock photographs from different properties, not an actual listing or client transaction.</p><ul><li>Exterior: <a href="https://unsplash.com/photos/wwqZ8CM21gg">Zac Gudakov / Unsplash</a></li><li>Empty room: <a href="https://unsplash.com/photos/ZWHajYLVsKo">Alex Tyson / Unsplash</a></li><li>Keys: <a href="https://unsplash.com/photos/jJnZg7vBfMs">Maria Ziegler / Unsplash</a></li></ul><p>Photographs used under the <a href="https://unsplash.com/license">Unsplash License</a>. All three files are included locally.</p></details><a href="#top" class="text-link">Back to top ↑</a></footer>
 </body>
 </html>

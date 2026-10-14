@@ -1,23 +1,45 @@
-# Lab 3: Photo Carousel — Starter
+# Between Chapters — Lab 3: The Power of Sequencing
 
-A small starting point for a real-estate photo story. This is incomplete class progress, not the final submission.
+An interactive real-estate photo story branded for Mariam Riyal. This extends the original Class Progress starter with actual photographs, two narratives, and richer controls. No framework, dependencies, external fonts, or build step. Open index.html locally or deploy the repository root with GitHub Pages.
 
-## Current implementation
-- An array stores three planned story steps.
-- A currentIndex variable tracks the active step.
-- A showSlide() function updates the page using textContent (DOM manipulation).
-- A click event listener advances the sequence and loops back to the beginning.
+## The same three photos, two meanings
 
-Open index.html and press Next to try it. The visible panels are text placeholders; no photos have been collected yet.
+| Story | Beginning | Middle | End | Interpretation |
+| --- | --- | --- | --- | --- |
+| Finding home | Exterior | Empty room | Keys | A possibility becomes a place to belong. |
+| Leaving home | Keys | Empty room | Exterior | A handover leads to reflection and a final look back. |
 
-## Next steps before the deadline
-1. Collect three appropriate photos; include them in the repository and record their sources/permissions.
-2. Replace the placeholder with an img element and update its src and alt through JavaScript.
-3. Show the SAME three photos in two different sequences, with a clear beginning, middle, and end in each.
-4. Make the second order produce a different narrative or interpretation.
-5. Test the interactions and publish the finished site with GitHub Pages.
+Both versions use exactly the same three files. These stock photos come from different properties and illustrate a fictional story, not an actual listing or client transaction.
 
-Review the code and try changing one caption or the initial index to understand how the variable, function, and event listener work. Only describe learning or class activity that actually occurred, and follow the course policy on assistance.
+## Interactions and technical concepts
+- Click story buttons to switch sequences; each starts at its beginning.
+- Next/Previous buttons, step indicators, and photo thumbnails navigate the three steps.
+- Restart returns to the current story's beginning.
+- Focus the carousel and use Left/Right, Home, or End.
+- Swipe horizontally on the photograph on touch devices.
+- Compare both storyboards below and use Explore this story to return to the carousel.
+- Variables: photos, sequences, currentSequence, currentIndex, swipeStart.
+- Functions: showSlide, goToSlide, changeSequence, buildThumbnails, buildComparison.
+- Event listeners: click, keydown, pointerdown, pointerup, pointercancel, pointerleave.
+- DOM manipulation: src, alt, textContent, disabled, classList, aria-pressed, aria-current, createElement, append, and replaceChildren.
+- Accessibility: native buttons, focus outlines, alt text, a polite announcement, reduced-motion support, keyboard operation, and no autoplay.
 
-## Upload this progress
-Create a public Lab3-Photo-Carousel repository. Upload index.html, style.css, script.js, and README.md directly at the repository root. Use the commit message Class Progress and copy the repository URL. GitHub Pages can be enabled later for the final submission.
+## Files
+index.html, style.css, script.js, README.md, and images/ containing exterior.jpg, room.jpg, keys.jpg.
+
+## Photo sources
+All downloaded from Unsplash and included locally under the Unsplash License (https://unsplash.com/license). Credits also appear in the webpage footer.
+- Exterior: Zac Gudakov — https://unsplash.com/photos/wwqZ8CM21gg
+- Empty room: Alex Tyson — https://unsplash.com/photos/ZWHajYLVsKo
+- Keys: Maria Ziegler — https://unsplash.com/photos/jJnZg7vBfMs
+
+## Update your existing repository
+Keep the original Class Progress commit. Upload the new index.html, style.css, script.js, README.md, and the complete images folder to the repository root. Do not upload only a ZIP or an enclosing project folder. Commit the finished changes with a descriptive message such as Complete Lab 3 photo carousel.
+
+Repository: https://github.com/riyalmariam-debug/Lab3-Photo-Carousel
+GitHub Pages address when enabled: https://riyalmariam-debug.github.io/Lab3-Photo-Carousel/
+
+In Settings → Pages, use Deploy from a branch → main → /(root) → Save. Wait for deployment, open the URL GitHub displays, and verify the finished version before submitting both URLs.
+
+## Validation
+JavaScript syntax and automated DOM interaction checks cover both orders, matching shared assets, caption changes, navigation boundaries, sequence switching, thumbnails, restart, keyboard, swipes, and comparison controls. Image files were decoded and visually inspected. Full rendered browser QA was unavailable in the build environment; check desktop/mobile layout in the published page before submission.
